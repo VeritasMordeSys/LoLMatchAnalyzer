@@ -1,0 +1,5 @@
+database:
+  path: "./data/matches.db"
+
+match:
+  fetch_count: 100
