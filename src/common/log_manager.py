@@ -82,6 +82,8 @@ class LogManager:
 
         cls._initialized = True
 
+        logging.getLogger("urllib3").setLevel(logging.WARNING)
+
     @classmethod
     def get_logger(cls, module_name: str) -> logging.Logger:
         """
